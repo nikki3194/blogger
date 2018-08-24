@@ -9,9 +9,14 @@
 		<% @articles.each do |article| %>
 		<li>
 			<%= link_to article.title, article_path(article), class: 'article_title' %>
+			<%= link_to 'DELETE', article_path(article), method: :delete, data: {confirm: "Are you sure to delete?"}  %>
+			
+
 		</li>
 	</ul>
+
+
 <% end %>
-<% link_to "Create New Article", new_article_path, class: 'new_article' %>
 </body>
+<%= link_to "Create New Article", new_article_path, class: 'new_article' %>
 </html>
