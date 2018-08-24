@@ -7,7 +7,15 @@
 	<p><%= @article.title %></p>
 	<p><%= @article.body %></p>
 </body>
+<div>
 <%= link_to "<<Back to Home Page", articles_path %>
 	<%= link_to 'DELETE', article_path(@article), method: :delete, data: {confirm: "Are you sure to delete?"}  %>
 	<%= link_to 'EDIT', edit_article_path(@article), method: :edit  %>
+</div>
+<div>
+	<%= render partial: 'articles/comment', collection: @article.comments %>
+</div>
+<div>
+	<%= render partial: 'comments/form'%>
+</div>	
 </html>
