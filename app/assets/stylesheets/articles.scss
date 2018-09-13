@@ -1,3 +1,57 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#new_header {
+  position: absolute;
+  left: 10;
+  right:350px;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 65px;
+  font-style: italic;
+  color: #E8BA8B;
+  }
+
+
+
+.front_page{
+  background-image: url("blogging.png");
+  height:500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  }
+
+  #new_link {
+  position: absolute;
+  left: 10;
+  right:350px;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  color: #E8BA8B;
+  }
+
+   h1 {
+    font-family: italic;
+    font-size: 45px;
+    color: #E8BA8B;
+  }
+
+  .myDivElement{
+    text-align: center;
+  }
+
+  #ul-color{
+  color: #E8BA8B;
+  }
+
+  body{
+   background-color: #ffefce;
+  }

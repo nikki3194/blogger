@@ -3,20 +3,20 @@
 <head>
 	<title>Articles</title>
 </head>
-<h1>All Articles</h1>
+<h1 align='center'>All Articles</h1>
 <body>
-	<ul id="articles">
+	<div class="myDivElement" id="articles">
+		
 		<% @articles.each do |article| %>
-		<li>
-			<%= link_to article.title, article_path(article), class: 'article_title' %>
-			<%= link_to 'DELETE', article_path(article), method: :delete, data: {confirm: "Are you sure to delete?"}  %>
-			
-
-		</li>
+		<ul id='ul-color'>
+		<li><%= link_to article.title, article_path(article), class: 'article_title' %>
+		<%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure to delete?"}  %></li>
 	</ul>
+	<% end %>
+	</div>
 
 
-<% end %>
+
 </body>
-<%= link_to "Create New Article", new_article_path, class: 'new_article' %>
+<div class="myDivElement"><%= link_to "Create New Article", new_article_path, class: 'new_article' %></div>
 </html>

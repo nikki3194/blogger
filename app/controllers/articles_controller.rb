@@ -1,7 +1,12 @@
 class ArticlesController < ApplicationController
+	
 
 	def index 
 		@articles = Article.all
+	end
+
+	def front_page
+	
 	end
 
 	def new
